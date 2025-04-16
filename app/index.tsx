@@ -1,4 +1,4 @@
-import { COLOR_CODES_ICON, ITEM_IDS_ICON, SERVER_INFO_ICON, CAPE_STEALER_ICON, SMALL_TEXT_CONVERTER_ICON, GRADIENT_GENERATOR_ICON, INVENTORY_SLOTS_ICON, UNICODE_SYMBOLS_ICON, COLOR_TEXT_GENERATOR_ICON } from '@/app/_constants/icons';
+import { COLOR_CODES_ICON, ITEM_IDS_ICON, SERVER_INFO_ICON, CAPE_STEALER_ICON, SMALL_TEXT_CONVERTER_ICON, GRADIENT_GENERATOR_ICON, INVENTORY_SLOTS_ICON, UNICODE_SYMBOLS_ICON, COLOR_TEXT_GENERATOR_ICON, FIREWORK_GENERATOR_ICON } from '@/app/_constants/icons';
 import { Button } from '@/components/Button';
 import { Logo } from '@/components/Logo';
 import { Text } from '@/components/Text';
@@ -65,7 +65,7 @@ const utils = [
     name: 'Firework Generator',
     description: 'Generate custom Fireworks for your minecraft server (to use in code or with commands).',
     href: '/tools/firework-generator' as const,
-    icon: COLOR_TEXT_GENERATOR_ICON
+    icon: FIREWORK_GENERATOR_ICON
   }
 ];
 
@@ -87,7 +87,7 @@ export default function Home() {
         data={utils}
         renderItem={({ item }) => (
           <Link href={{ pathname: item.href }} key={item.name} asChild>
-            <Button className="flex-row items-center gap-2">
+            <Button className="flex-row items-start gap-2">
               <SvgXml xml={item.icon} width={24} height={24} />
               <Text>{item.name}</Text>
             </Button>
