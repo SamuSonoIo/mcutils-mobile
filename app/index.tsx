@@ -60,6 +60,12 @@ const utils = [
     description: 'Generate text with all the color codes available.',
     href: '/tools/color-text-generator' as const,
     icon: COLOR_TEXT_GENERATOR_ICON
+  },
+  {
+    name: 'Firework Generator',
+    description: 'Generate custom Fireworks for your minecraft server (to use in code or with commands).',
+    href: '/tools/firework-generator' as const,
+    icon: COLOR_TEXT_GENERATOR_ICON
   }
 ];
 
